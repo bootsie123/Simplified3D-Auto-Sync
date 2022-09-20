@@ -51,7 +51,7 @@ public class UI {
 		updating = Toolkit.getDefaultToolkit().createImage(updatingUrl).getScaledInstance(16, -1, Image.SCALE_SMOOTH);
 		
 		PopupMenu popup = new PopupMenu();
-		trayIcon = new TrayIcon(logo, "Simplify 3D Auto Save");
+		trayIcon = new TrayIcon(logo, "Simplify 3D Auto Sync");
 		
 		SystemTray tray = SystemTray.getSystemTray();
 		

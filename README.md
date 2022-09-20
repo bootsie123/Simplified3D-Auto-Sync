@@ -1,4 +1,4 @@
-# Simplified3D Auto Sync
+# Simplify3D Auto Sync
 
 [![GitHub](https://img.shields.io/github/license/bootsie123/Simplified3D-Project)](https://github.com/bootsie123/Simplified3D-Project/blob/master/LICENSE)
 
