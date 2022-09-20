@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="window" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-border: none; -fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SettingsController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="215.0" layoutY="75.0" prefHeight="294.0" prefWidth="594.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Settings" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="TOP_CENTER" layoutX="20.0" layoutY="80.0" prefWidth="600.0" spacing="20.0">
+               <children>
+                  <Label contentDisplay="RIGHT" prefHeight="28.0" prefWidth="300.0" text="Github Username">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <JFXTextField fx:id="username" focusColor="#0a304a" prefHeight="26.0" prefWidth="300.0" promptText="Username">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefWidth="600.0" spacing="20.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="300.0" text="Github Access Token">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <JFXTextField fx:id="token" focusColor="#0a304a" prefHeight="26.0" prefWidth="300.0" promptText="Access Token">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefWidth="600.0" spacing="20.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="300.0" text="Github Repository Name">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <JFXTextField fx:id="repoName" focusColor="#0a304a" prefHeight="26.0" prefWidth="300.0" promptText="Simplified-3D-Profiles">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="70.0" prefWidth="600.0" spacing="20.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="300.0" text="Repository Branch" textAlignment="RIGHT">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <JFXTextField fx:id="branch" focusColor="#0a304a" prefHeight="26.0" prefWidth="300.0" promptText="master">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="30.0" right="30.0" />
+               </padding>
+            </Separator>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Program Settings" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXCheckBox fx:id="autoRun" alignment="CENTER" checkedColor="#111111" contentDisplay="CENTER" prefHeight="32.0" text="Auto Update Profiles">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="autoStart" alignment="CENTER" checkedColor="#111111" contentDisplay="CENTER" layoutX="245.0" layoutY="330.0" prefHeight="32.0" text="Run on Startup">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </JFXCheckBox>
+         </children>
+      </VBox>
+      <BorderPane layoutX="39.0" layoutY="236.0" prefHeight="50.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <right>
+            <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="BOTTOM_RIGHT">
+              <buttons>
+                  <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" onAction="#save" prefHeight="30.0" prefWidth="75.0" ripplerFill="#5b5b5b" style="-fx-background-color: #2196F3; -fx-background-radius: 2px;" text="Save" textAlignment="CENTER" textFill="WHITE" />
+              </buttons>
+               <BorderPane.margin>
+                  <Insets bottom="20.0" right="20.0" />
+               </BorderPane.margin>
+            </ButtonBar>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>
